@@ -1,0 +1,17 @@
+select a storage engine that is appropriate for your application??
+Transactional workload vs analytics workload?
+
+1. traditional relational databases
+2. NoSQL databases. 
+
+storage engines: log-structured storage engines, and page-oriented storage engines such as B-trees.
+
+Data Structures That Power Your Database:
+1. db_set and db_get
+For writes, it’s hard to beat the performance of simply appending to a file, because that’s the simplest possible write operation.
+2. Hash Indexes
+Bitcask offers high-performance reads and writes
+A storage engine like Bitcask is well suited to situations where the value for each key is updated frequently.
+Compaction means throwing away duplicate keys in the log, and keeping only the most recent update for each key.
+
+
